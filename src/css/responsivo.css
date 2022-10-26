@@ -1,0 +1,21 @@
+@media (max-width: 1401px) {
+    .pinturas {
+        max-width: 950px;
+        /* background-color: brown; */
+        margin: 2em 0;
+    }
+
+    main {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;        
+    }
+}
+
+@media (max-width: 672px) {
+    .pinturas {
+        max-width: 700px;
+        gap: 1px;
+    }
+}

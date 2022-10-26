@@ -1,60 +1,58 @@
-body {
+main {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main {
+.pinturas {
     font-family: 'Public Sans', sans-serif;
     display: flex;
-    flex-wrap: nowrap;
-    /* background-color: cadetblue; */
-    width: 95%;
-    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    gap: 20px;
 }
 
-.main li {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    /* background-color: lightcoral; */
+.pinturas li.pintura {
+    position: relative;
 }
 
-li figure img {
-    max-width: 100%;
+li.pintura {
+    width: 335px;
+    /* height: 431px; */
 }
 
-li .legenda-img {
-    flex-direction: column;
-    transform: translateY(-90px);
+
+li.pintura img {
+    width: 100%;
+}
+
+li.pintura .legenda-img h3{
+    width: 335px;
     font-size: 17px;
-    margin-left: 26px;
-    margin-bottom: -59px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
 }
 
 li .legenda-img span {
     display: block;
     font-size: 30px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
-@media (max-width: 426px){
-    body {
-        align-items: flex-start;
+@media (max-width:1482px) {
+    .pinturas {
+        max-width: 900px;
     }
+}
 
-    .main {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 45px 0 45px 0;
+@media (max-width: 740px) {
+    .pinturas {
+        max-width: 600px;
+        gap: 1px;
     }
-
-    .main li {
-        /* margin: 20px .9px 20px; */
-        margin: 0;
-    }
-
 }
