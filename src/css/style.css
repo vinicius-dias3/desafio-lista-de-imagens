@@ -10,7 +10,6 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: cadetblue;
     gap: 20px;
 }
 
